@@ -1,0 +1,80 @@
+
+<!-- saved from url=(0030)http://127.0.0.1:5500/App.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <center>
+    <div class="Form-container">
+        <h2> Admission Form</h2>
+        <form action="http://127.0.0.1:5500/App.html#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required=""><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required=""><br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required=""><br>
+            <label for="course">Select a course:</label>
+            <select name="course" id="course">
+                <option value="">--Select course</option>
+                <option value="Computer Science">--Computer Science--</option>
+                <option value="Buisness Management">--BuIsness Management--</option>
+                <option value="Engineering">--Engineering--</option>
+            </select><br>
+            <label for="Gender">Gender:</label>
+            <div class="Gender-container">
+                <label for="male">Male</label> 
+                <input type="radio" id="male" name="Gender" value="male" required=""><br>
+                <label for="female">female</label> 
+                <input type="radio" id="female" name="Gender" value="female" required="">
+            </div>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required=""><br>
+            <label for="Address">Address:</label>
+            <input type="AddRess" id="Address" name="Address" required=""><br>
+            <input type="submit" value="submit">
+        </form>
+    <div id="extwaiokist" style="display:none" v="nipgg" q="e9ca372e" c="165.2" i="972" u="0.209" s="09172413" sg="svr_07312409-ga_09172413-bai_09032406" d="1" w="false" e="}" a="3" m="BMe=" vn="9adfy"><div id="extwaigglbit" style="display:none" v="nipgg" q="e9ca372e" c="165.2" i="972" u="0.209" s="09172413" sg="svr_07312409-ga_09172413-bai_09032406" d="1" w="false" e="}" a="3" m="BMe="></div></div></div>
+    </center>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
